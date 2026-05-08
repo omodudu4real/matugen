@@ -1,0 +1,132 @@
+/* config - Launcher */
+
+configuration {
+    modi:                       "drun,run";
+    font:                        "JetBrainsMono Nerd Font 10";
+    show-icons:                 false;
+  	drun-display-format:        "{name}";
+    hover-select:               true;
+}
+
+/* config and colors ---- */
+@import "default.rasi"
+
+/* ---- Window ---- */
+window {
+    location:                   center;
+    anchor:                     center;
+    border:                     3px;
+    border-radius:              30px;
+    margin:                   0px;
+    background-color:           transparent;
+    width:                      55%;
+}
+
+/* Main Box ---------------------------------------- */
+mainbox {
+    orientation:                horizontal;
+    children:                   [ "img", "listbox"];
+
+    background-color:           transparent;
+    border-radius:              30px;
+    border:                   0px;
+
+    spacing:                    24px;
+    padding:                    16px;
+}
+
+
+
+/* Listbox ------------------------------------------ */
+listbox {
+    spacing:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "message", "listview" ];
+}
+
+/* Listview ---------------------------------------- */
+listview {
+    columns:                     2;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     16px;
+    background-color:            transparent;
+}
+
+/* Image ----------------------------------------------- */
+img {
+    padding:                    64px 128px;
+    border-radius:              24px;
+    background-image:           url("{{image}}", height);
+    margin:                     4px;
+}
+
+/* Inputbar ---------------------------------------------- */
+inputbar {
+    children:                    [ "textbox-icon", "entry" ];
+
+    border-radius:               12px;
+    background-color:            @shade-bg;
+    text-color:                  @text;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     14px;
+}
+
+textbox-icon {
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+    str: "  ";
+}
+
+/* Entry ----------------------------------------------- */
+entry {
+    cursor:                     text;
+    expand:                     false;
+    placeholder-color:          inherit;
+    placeholder:                "Wifi";
+
+    background-color:           transparent;
+    text-color:                 inherit;
+}
+
+/* ---- Elements ---- */
+element {
+    cursor:                     pointer;
+    background-color:           transparent;
+    border-radius:              12px;
+    padding:                    12px;
+}
+
+/* Add this block to override the default selection style */
+element selected.normal {
+    background-color:           @selected;
+    text-color:                 @text-selected;
+    border:                     0px; /* Remove the sharp border from default.rasi */
+    border-radius:              12px; /* Match the element radius */
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+
+/* Error */
+error-message {
+    border-radius:               30px;
+    background-color:            transparent;
+}
