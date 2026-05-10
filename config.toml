@@ -3,7 +3,7 @@ version_check = false
 
 [config.wallpaper]
 # Whether to set the wallpaper or not
-set = false
+set = true
 
 # The base command to run for applying the wallpaper.
 # Keywords like {{ image }} or anything that works inside of hooks works here.
@@ -29,6 +29,7 @@ output_path = '~/.config/fuzzel/fuzzel_theme.ini'
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-3.0/gtk.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
+
 
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/gtk-4.0/gtk.css'
@@ -66,6 +67,10 @@ output_path = '~/.config/rofi/themes/wallpaper-select.rasi'
 [templates.wifi-menu_rofi]
 input_path = '~/.config/matugen/templates/rofi/wifi-menu.rasi'
 output_path = '~/.config/rofi/themes/wifi-menu.rasi'
+
+[templates.theme-selector_rofi]
+input_path = '~/.config/matugen/templates/rofi/theme-selector.rasi'
+output_path = '~/.config/rofi/themes/theme-selector.rasi'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/wlogout/colors.css'

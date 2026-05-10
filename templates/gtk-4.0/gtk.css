@@ -16,9 +16,9 @@
     @define-color destructive_bg_color {{colors.error_container.light.hex}};
     @define-color destructive_fg_color {{colors.on_error_container.light.hex}};
     @define-color destructive_color {{colors.error.light.hex}};
-    @define-color success_bg_color #B5CCBA;
-    @define-color success_fg_color #213528;
-    @define-color success_color #374B3E;
+    @define-color success_bg_color {{colors.tertiary_container.light.hex}};
+    @define-color success_fg_color {{colors.on_tertiary_container.light.hex}};
+    @define-color success_color {{colors.tertiary.light.hex}};
     /* Base surfaces */
     @define-color window_bg_color {{colors.background.light.hex}};
     @define-color window_fg_color {{colors.on_background.light.hex}};
@@ -56,9 +56,9 @@
     @define-color destructive_bg_color {{colors.error_container.dark.hex}};
     @define-color destructive_fg_color {{colors.on_error_container.dark.hex}};
     @define-color destructive_color {{colors.error.dark.hex}};
-    @define-color success_bg_color #374B3E;
-    @define-color success_fg_color #D1E9D6;
-    @define-color success_color #B5CCBA;
+    @define-color success_bg_color {{colors.tertiary_container.dark.hex}};
+    @define-color success_fg_color {{colors.on_tertiary_container.dark.hex}};
+    @define-color success_color {{colors.tertiary.dark.hex}};
     /* Base surfaces */
     @define-color window_bg_color {{colors.background.dark.hex}};
     @define-color window_fg_color {{colors.on_background.dark.hex}};
@@ -87,18 +87,68 @@
     @define-color thumbnail_fg_color {{colors.on_surface.dark.hex}};
 }
 
-.navigation-sidebar{
-    background-color: @sidebar_bg_color;
-    color: @window_fg_color;
+.navigation-sidebar {
+  background-color: @sidebar_bg_color;
+  color: @window_fg_color;
 }
 
-headerbar.default-decoration{
-    /* you may need to tweak depending on your gtk theme */
-    margin-bottom: 50px;
-    margin-top: -100px;
+headerbar.default-decoration {
+  margin-bottom: 50px;
+  margin-top: -100px;
 }
 
-/* rm -rf window shadows */
-window.csd, window.csd decoration{
-    box-shadow: none;
+/* Remove window shadows */
+window.csd,
+window.csd decoration {
+  box-shadow: none;
 }
+
+/* YAD / GTK calendar popup */
+window {
+  background-color: @popover_bg_color;
+  color: @popover_fg_color;
+  border-radius: 14px;
+}
+
+calendar {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
+  background-color: @popover_bg_color;
+  color: @popover_fg_color;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid alpha(@accent_color, 0.35);
+}
+
+calendar:selected {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+  border-radius: 8px;
+}
+
+calendar.header {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
+  color: @accent_color;
+  font-weight: bold;
+}
+
+calendar.button {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
+  color: @accent_color;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%);
+}
+
+calendar.highlight {
+  color: @accent_color;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: alpha(@popover_fg_color, 0.45);
+}
+
+
+
+
+
+
