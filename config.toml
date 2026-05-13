@@ -3,7 +3,7 @@ version_check = false
 
 [config.wallpaper]
 # Whether to set the wallpaper or not
-set = true
+set = false
 
 # The base command to run for applying the wallpaper.
 # Keywords like {{ image }} or anything that works inside of hooks works here.
