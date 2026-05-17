@@ -3,8 +3,12 @@
 * Generated with Matugen
 */
 :root {
+    --favFont: 'Akaya Kanadaka';
+    --commentFont: 'Cartograph CF';
+    --cursiveFont: 'Fira Code iScript';
+    --fav2Font: 'Cascadia Code';
+
 <* for name, value in colors *>
     --{{name}}: {{value.default.hex}};
 <* endfor *>
 }
-
