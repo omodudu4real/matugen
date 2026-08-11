@@ -68,6 +68,10 @@ output_path = '~/.config/rofi/themes/wallpaper-select.rasi'
 input_path = '~/.config/matugen/templates/rofi/wifi-menu.rasi'
 output_path = '~/.config/rofi/themes/wifi-menu.rasi'
 
+[templates.emoji-picker_rofi]
+input_path = '~/.config/matugen/templates/rofi/emoji-picker.rasi'
+output_path = '~/.config/rofi/themes/emoji-picker.rasi'
+
 [templates.theme-selector_rofi]
 input_path = '~/.config/matugen/templates/rofi/theme-selector.rasi'
 output_path = '~/.config/rofi/themes/theme-selector.rasi'
