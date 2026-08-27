@@ -15,8 +15,8 @@ input_path = '~/.config/matugen/templates/colors.json'
 output_path = '~/.local/state/quickshell/user/generated/colors.json'
 
 [templates.hyprland]
-input_path = '~/.config/matugen/templates/hyprland/hyprland-colors.conf'
-output_path = '~/.config/hypr/colors/colors.conf'
+input_path = '~/.config/matugen/templates/hyprland/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors/colors.lua'
 
 [templates.hyprlock]
 input_path = '~/.config/matugen/templates/hyprlock/hyprlock-colors.conf'
@@ -60,35 +60,35 @@ output_path = '~/.config/rofi/themes/default.rasi'
 input_path = '~/.config/matugen/templates/rofi/clipboard.rasi'
 output_path = '~/.config/rofi/themes/clipboard.rasi'
 
-[templates.wallpaperSelect_rofi]
-input_path = '~/.config/matugen/templates/rofi/wallpaper-select.rasi'
-output_path = '~/.config/rofi/themes/wallpaper-select.rasi'
+# [templates.wallpaperSelect_rofi]
+# input_path = '~/.config/matugen/templates/rofi/wallpaper-select.rasi'
+# output_path = '~/.config/rofi/themes/wallpaper-select.rasi'
 
-[templates.wifi-menu_rofi]
-input_path = '~/.config/matugen/templates/rofi/wifi-menu.rasi'
-output_path = '~/.config/rofi/themes/wifi-menu.rasi'
+# [templates.wifi-menu_rofi]
+# input_path = '~/.config/matugen/templates/rofi/wifi-menu.rasi'
+# output_path = '~/.config/rofi/themes/wifi-menu.rasi'
 
 [templates.emoji-picker_rofi]
 input_path = '~/.config/matugen/templates/rofi/emoji-picker.rasi'
 output_path = '~/.config/rofi/themes/emoji-picker.rasi'
 
-[templates.theme-selector_rofi]
-input_path = '~/.config/matugen/templates/rofi/theme-selector.rasi'
-output_path = '~/.config/rofi/themes/theme-selector.rasi'
+# [templates.theme-selector_rofi]
+# input_path = '~/.config/matugen/templates/rofi/theme-selector.rasi'
+# output_path = '~/.config/rofi/themes/theme-selector.rasi'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/wlogout/colors.css'
 output_path = '~/.config/wlogout/colors/color.css'
 
-[templates.waybar]
-input_path = '~/.config/matugen/templates/waybar/colors.css'
-output_path = '~/.config/waybar/colors/colors.css'
-post_hook = "sh -c 'sleep 0.5; pkill -SIGUSR2 waybar'"
+# [templates.waybar]
+# input_path = '~/.config/matugen/templates/waybar/colors.css'
+# output_path = '~/.config/waybar/colors/colors.css'
+# post_hook = "sh -c 'sleep 0.5; pkill -SIGUSR2 waybar'"
 
-[templates.swaync]
-input_path = '~/.config/matugen/templates/swaync/colors.css'
-output_path = '~/.config/swaync/colors/colors.css'
-post_hook = "pkill -SIGUSR2 swaync; swaync &"
+# [templates.swaync]
+# input_path = '~/.config/matugen/templates/swaync/colors.css'
+# output_path = '~/.config/swaync/colors/colors.css'
+# post_hook = "pkill -SIGUSR2 swaync; swaync &"
 
 [templates.vscode]
 input_path = '~/.config/matugen/templates/vscode/colors.css'

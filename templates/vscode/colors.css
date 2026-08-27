@@ -5,7 +5,8 @@
 :root {
     --favFont: 'Akaya Kanadaka';
     --fav2Font: 'Cascadia Code';
-    --commentFont: 'Cartograph CF';
+    /* --commentFont: 'Cartograph CF'; main comment font */
+    --commentFont: 'Malthon DEMO';
     --cursiveFont: 'Fira Code iScript';
     --ligatureFont: 'Fira Code';
 

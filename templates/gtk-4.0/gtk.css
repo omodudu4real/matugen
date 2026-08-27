@@ -41,7 +41,7 @@
     /* Popups */
     @define-color popover_bg_color {{colors.surface_container_highest.light.hex}};
     @define-color popover_fg_color {{colors.on_surface.light.hex}};
-    @define-color dialog_bg_color {{colors.surface_container_high.light.hex}};
+    @define-color dialog_wbg_color {{colors.surface_container_high.light.hex}};
     @define-color dialog_fg_color {{colors.on_surface.light.hex}};
     @define-color thumbnail_bg_color {{colors.surface_container_high.light.hex}};
     @define-color thumbnail_fg_color {{colors.on_surface.light.hex}};
@@ -102,53 +102,3 @@ window.csd,
 window.csd decoration {
   box-shadow: none;
 }
-
-/* YAD / GTK calendar popup */
-window {
-  background-color: @popover_bg_color;
-  color: @popover_fg_color;
-  border-radius: 14px;
-}
-
-calendar {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
-  background-color: @popover_bg_color;
-  color: @popover_fg_color;
-  padding: 12px;
-  border-radius: 14px;
-  border: 1px solid alpha(@accent_color, 0.35);
-}
-
-calendar:selected {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
-  background-color: @accent_bg_color;
-  color: @accent_fg_color;
-  border-radius: 8px;
-}
-
-calendar.header {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
-  color: @accent_color;
-  font-weight: bold;
-}
-
-calendar.button {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
-  color: @accent_color;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%);
-}
-
-calendar.highlight {
-  color: @accent_color;
-  font-weight: bold;
-}
-
-calendar:indeterminate {
-  color: alpha(@popover_fg_color, 0.45);
-}
-
-
-
-
-
-

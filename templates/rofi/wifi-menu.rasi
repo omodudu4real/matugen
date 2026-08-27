@@ -19,7 +19,7 @@ window {
     border-radius:              30px;
     margin:                   0px;
     background-color:           transparent;
-    width:                      55%;
+    width:                      65%;
 }
 
 /* Main Box ---------------------------------------- */
@@ -48,7 +48,7 @@ listbox {
 /* Listview ---------------------------------------- */
 listview {
     columns:                     2;
-    lines:                       6;
+    lines:                       5;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
